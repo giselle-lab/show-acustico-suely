@@ -48,13 +48,13 @@
   .bt {
     border-radius: 12px;
     padding: 0.375rem 2.75rem;
-    background-color: var(--verde);
+    background-color: var(--laranja-principal);
     color: var(--branco);
     width: fit-content;
     text-align: center;
     transition: all 0.3s !important;
     cursor: pointer;
-    border: 2px solid var(--verde);
+    border: 2px solid var(--laranja-principal);
     font-size: 20px;
     font-weight: 700;
   }
@@ -137,7 +137,7 @@
   }
   #home .verde,
   #home .textos span {
-    color: var(--verde);
+    color: var(--laranja-principal);
   }
   
   #home .formulario {
@@ -333,7 +333,7 @@
     opacity: 0;
   }
   .custom-switch-input:checked ~ .custom-switch-indicator {
-    background: var(--verde);
+    background: var(--laranja-principal);
   }
   .custom-switch-indicator {
     display: inline-block;
