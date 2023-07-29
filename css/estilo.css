@@ -1,0 +1,1084 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
+@font-face {
+    font-family: ArticulatCF;
+    font-weight: 400;
+    letter-spacing: 0;
+    src: url("./ArticulatCF/ArticulatCF-Normal.otf") format("opentype");
+  }
+  @font-face {
+    font-family: ArticulatCF;
+    font-weight: 800;
+    letter-spacing: 0;
+    src: url("./ArticulatCF/ArticulatCF-Bold.otf") format("opentype");
+  }
+  
+  :root {
+    --fundo-marrom: #200901;
+    --laranja-principal: #ea8938;
+    --verde: #00d348;
+    --cinza: #585859;
+    --cinza2: #1a1a1a;
+    --branco: #ffff;
+    --verde-bandeira: rgba(0, 212, 55, 0.38);
+  }
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*-------------- GERAL --------------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  body {
+    background-color: #fff;
+    font-family: "ArticulatCF", sans-serif !important;
+    font-display: swap;
+    font-weight: 700;
+    height: 100vh;
+    font-size: 14px;
+    color: #6d6e73;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 1000px;
+  }
+  
+  .bt {
+    border-radius: 12px;
+    padding: 0.375rem 2.75rem;
+    background-color: var(--verde);
+    color: var(--branco);
+    width: fit-content;
+    text-align: center;
+    transition: all 0.3s !important;
+    cursor: pointer;
+    border: 2px solid var(--verde);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .bt:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .botao {
+    background-color: var(--laranja-principal);
+    color: var(--branco);
+    font-weight: 300;
+    line-height: 27px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 360px;
+    border-radius: 8px;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 4px 17px rgba(53, 53, 53, 0.3);
+    font-size: 15px;
+    transition: 0.8s;
+    margin-bottom: 40px;
+  
+  }
+  
+  .botao:hover {
+    box-shadow: 0px 15px 50px var(--verde-bandeira);
+  }
+  
+  .botao:active,
+  .botao:focus {
+    background-color:  #00ae2d;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*--------------- TOPO --------------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #topo {
+    background-color: #fff;
+    width: 100vw;
+  }
+  #topo .container {
+    max-width: 1000px;
+  }
+  #topo .logo img {
+    width: 50px;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*--------------- HOME --------------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #home {
+    width: 100vw;
+    height: 60vh;
+    min-height: 510px;
+    background-color: #161616;
+    background-image: url(../img/mancha-home.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+  }
+  #home .textos {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900;
+  }
+  #home .destaque1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #home .destaque2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #home .verde,
+  #home .textos span {
+    color: var(--verde);
+  }
+  
+  #home .formulario {
+    display: none !important;
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #161616;
+    /* box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #00dd87, 0 0 30px #00dd87,0 0 40px #00dd87, 0 0 50px #00dd87;
+      -webkit-animation: blink 0.7s infinite alternate;
+      animation: blink 0.7s infinite alternate; */
+  }
+  #home .formularioExtra {
+    display: none !important;
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #161616;
+  }
+  #home .terceiro__form {
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #161616;
+  }
+  #home .titulo__form {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--branco);
+  }
+  #home .pos-ativa {
+    border-bottom: solid 3px var(--verde) !important;
+  }
+  #home .formulario .bt {
+    font-size: 14px;
+  }
+  #home input,
+  #home select {
+    border: 0px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  #home .formularioExtra {
+    display: block;
+  }
+  #home .formularioExtra .pfv {
+    font-size: 20px;
+  }
+  #home .formularioExtra .pfv span {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--verde);
+  }
+  #home .continuar,
+  #home #enviar {
+    font-size: 14px;
+  }
+  
+  /* criado para segunda pagina */
+  #etapa2,
+  #etapa3 {
+    display: none;
+  }
+  .box-content {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #161616;
+  }
+  .meiocard {
+    width: 49%;
+  }
+  
+  #home .formulario .bt {
+    width: auto;
+    margin: 0;
+  }
+  .form-control {
+    border-radius: 12px !important;
+  }
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*---------- LOGOS CAROSSEL ---------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #logos-carrossel {
+    width: 100vw;
+    max-height: 100px;
+    background-color: #000;
+  }
+  
+  #logos-carrossel .itemcarrossel {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  #logos-carrossel .itemcarrossel img {
+    display: block;
+    margin: auto;
+    width: 150px !important;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*------ OPORTUNIDADES MERCADO ------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #oportunidades-mercado {
+    padding: 80px 0px;
+    color: #000;
+    background-color: #efeded;
+    position: relative;
+  }
+  #oportunidades-mercado img,
+  #oportunidades-mercado video {
+    max-width: 700px;
+    margin: 50px 0px;
+  }
+  #oportunidades-mercado .titulo1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #oportunidades-mercado .titulo2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  #oportunidades-mercado .bt {
+    color: #000;
+  }
+  #oportunidades-mercado .bt:hover {
+    color: #fff;
+  }
+  #oportunidades-mercado .bt {
+    font-size: 24px;
+  }
+  #oportunidades-mercado #app {
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*----- ROYALTIES DECRESCENTES ------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #royaties-decrescentes {
+    padding: 80px 0px;
+    color: #000;
+  }
+  #royaties-decrescentes #royaties-decrescentes .titulo1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #royaties-decrescentes .titulo2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*--------- SÃ“ NA GETPOWER ----------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #so-na-getpower {
+    padding: 80px 0px;
+    color: #000;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(206, 206, 206) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  #so-na-getpower .titulo {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+  #so-na-getpower .card {
+    width: 23%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 10px;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+      drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  }
+  #so-na-getpower .card .icone img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  #so-na-getpower .card .titulo {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  #so-na-getpower .card .texto {
+    font-weight: 100;
+  }
+  #so-na-getpower .container2 {
+    max-width: 1200px;
+    margin-top: 70px;
+  }
+  #so-na-getpower .container2 .imagem img {
+    border-radius: 20px;
+  }
+  #so-na-getpower .container2 .imagem:nth-child(even) {
+    padding-top: 30px;
+  }
+  #so-na-getpower .bt {
+    font-size: 24px;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*------- PRODUTOS EXCLUSIVOS -------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /* #produtos-exclusivos{
+      padding: 80px 0px;
+  } */
+  #produtos-exclusivos .titulo {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    /* margin-bottom: 50px; */
+    color: #000;
+  }
+  #produtos-exclusivos .exclusivo {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    left: 50px;
+  }
+  #produtos-exclusivos .produtos {
+    margin-left: -50px;
+  }
+  #produtos-exclusivos .texto {
+    padding: 0px 10px;
+  }
+  #produtos-exclusivos .bg_verde {
+    background-color: var(--verde);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  #produtos-exclusivos .chamada {
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+    line-height: 48px;
+  }
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*---------- PQ EMPRESÃRIO ----------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #pq-empresario {
+    padding: 80px 0px;
+    background-color: #efeded;
+    color: #000;
+  }
+  #pq-empresario .titulo {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 900;
+  }
+  #pq-empresario .verde {
+    font-size: 50px;
+    line-height: 55px;
+    color: var(--verde);
+    position: relative;
+    width: fit-content;
+  }
+  #pq-empresario .texto {
+    font-weight: 100;
+  }
+  #pq-empresario span {
+    font-weight: 900;
+  }
+  #pq-empresario img {
+    border-radius: 20px;
+  }
+  #pq-empresario .rabisco {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  #pq-empresario .rabisco img {
+    width: 100%;
+  }
+  #pq-empresario .destaque {
+    background-color: var(--verde);
+    width: fit-content;
+    padding: 5px 10px;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*----- VEJA NOSSOS EMPRESÃRIOS -----*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #veja-nossos-empresarios {
+    padding: 80px 0px;
+    background-color: #efeded;
+  }
+  #veja-nossos-empresarios .titulo {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    color: #000;
+  }
+  #veja-nossos-empresarios .exclusivo {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+  #veja-nossos-empresarios .veja-o-que {
+    margin-left: -50px;
+  }
+  #veja-nossos-empresarios .nossos-empresarios {
+    padding: 0px 10px;
+    font-size: 50px;
+    line-height: 60px;
+    position: relative;
+    z-index: 2;
+  }
+  #veja-nossos-empresarios .bg_verde {
+    background-color: var(--verde);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  #veja-nossos-empresarios iframe {
+    border-radius: 30px;
+  }
+  #veja-nossos-empresarios .box-depoimentos {
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 30px;
+    text-align: left;
+    font-weight: 100;
+  }
+  #veja-nossos-empresarios .foto-nome .foto {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #00dd87;
+    border-radius: 50px;
+    margin-right: 10px;
+    background-size: cover;
+  }
+  #veja-nossos-empresarios .foto-nome .nome {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*------ VANTAGENS FRANQUEADOS ------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #vantagens-franqueados {
+    padding: 80px 0px;
+    background-color: #efeded;
+  }
+  #vantagens-franqueados .titulo {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    color: #000;
+  }
+  #vantagens-franqueados .vantagens {
+    font-size: 60px;
+    line-height: 70px;
+    margin-left: -150px;
+  }
+  #vantagens-franqueados .para-franqueados {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    right: -50px;
+    z-index: 1;
+  }
+  #vantagens-franqueados .texto {
+    padding: 0px 10px;
+  }
+  #vantagens-franqueados .bg_verde {
+    background-color: var(--verde);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  #vantagens-franqueados .cima,
+  #vantagens-franqueados .baixo {
+    text-align: center;
+  }
+  #vantagens-franqueados .itens {
+    max-width: 700px;
+    padding: 0px 50px;
+    margin: auto;
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    background-image: url("../img/verdinhomeio.png");
+    position: relative;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+  #vantagens-franqueados .itens .item {
+    margin-bottom: 40px;
+  }
+  #vantagens-franqueados .itens .item:last-child {
+    margin-bottom: 0px;
+  }
+  #vantagens-franqueados .itens .item .d-flex {
+    border-bottom: 1px solid;
+  }
+  #vantagens-franqueados .itens .item .descricao {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  #vantagens-franqueados .stickers {
+    position: absolute;
+    right: -50px;
+    bottom: -140px;
+  }
+  #vantagens-franqueados .seta {
+    position: absolute;
+    left: -113px;
+    bottom: -290px;
+    z-index: 99;
+  }
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  /*--------- ANÃLISE INTERNA ---------*/
+  /*-----------------------------------*/
+  /*-----------------------------------*/
+  #analise-interna {
+    padding: 80px 0px;
+    background-color: #efeded;
+  }
+  #analise-interna .titulo {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    color: #000;
+  }
+  #analise-interna .comosera {
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: -150px;
+  }
+  #analise-interna .analise {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    font-size: 50px;
+    line-height: 60px;
+    right: -50px;
+    z-index: 1;
+  }
+  #analise-interna .texto {
+    padding: 0px 10px;
+  }
+  #analise-interna .bg_verde {
+    background-color: var(--verde);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  #analise-interna .lista {
+    max-width: 700px;
+    margin: auto;
+  }
+  #analise-interna .lista .dados {
+    border-left: 3px solid #000;
+    padding: 0px 20px;
+    position: relative;
+    width: 50%;
+    color: #000;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  #analise-interna .final .dados {
+    border-left: 3px solid #efeded !important;
+  }
+  #analise-interna .lista .dados .bullet {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #000;
+    position: absolute;
+    left: -12px;
+    top: 0px;
+  }
+  #analise-interna .lista img {
+    margin-bottom: 50px;
+  }
+  
+  #obrigado {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #161616;
+    background-image: url(../img/mancha-home.png);
+    background-size: cover;
+    color: #fff;
+  }
+  #obrigado .container {
+    min-height: 100vh;
+  }
+  #obrigado .textos {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900;
+  }
+  #obrigado .verde,
+  #obrigado .textos span {
+    color: var(--verde);
+  }
+  #obrigado .bt {
+    font-size: 14px;
+    line-height: 16px;
+    width: fit-content;
+    color: #fff;
+    background-color: #3fbe4f;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: inherit;
+    border: 0px;
+  }
+  #obrigado .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+  }
+  #obrigado .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*----------------------------------------------*/
+  /*----------------------------------------------*/
+  /*-------------- ADAPTAÃ‡ÃƒO MOBILE --------------*/
+  /*----------------------------------------------*/
+  /*----------------------------------------------*/
+  @media screen and (max-width: 767px) {
+    video {
+      max-width: 100% !important;
+      margin: 20px 0px;
+    }
+    .bt {
+      font-size: 12px;
+    }
+  
+    /*-------------- HOME --------------*/
+    #home {
+      width: 100vw;
+      height: auto;
+      padding: 50px 0px;
+      text-align: center;
+      background-image: none;
+    }
+    #home .textos {
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 900;
+    }
+    #home .formulario {
+      margin-top: 20px;
+      padding: 15px;
+    }
+    #home input,
+    #home select {
+      margin-bottom: 15px;
+    }
+  
+    #logos-carrossel .itemcarrossel {
+      padding: 20px 0px;
+    }
+    #logos-carrossel .itemcarrossel img {
+      display: block;
+      margin: auto;
+      width: 80px !important;
+    }
+  
+    
+  /* criado para segunda pagina */
+  #home .titulo__form{
+    font-size: 14px;
+  }
+  #home .box-content{
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+  .ordem{
+    flex-direction: column;
+  }
+  .meiocard{
+    width: 100%;
+  }
+    /*------ OPORTUNIDADES MERCADO ------*/
+    #oportunidades-mercado {
+      padding: 40px 0px;
+    }
+    #oportunidades-mercado .titulo1 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    #oportunidades-mercado .titulo2 {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    #oportunidades-mercado .bt {
+      font-size: 14px;
+    }
+  
+    /*------ ROYALTIES DECRESCENTES ------*/
+    #royaties-decrescentes {
+      padding: 40px 0px;
+    }
+    #royaties-decrescentes .titulo1 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    #royaties-decrescentes .titulo2 {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    /*------ SÃ“ NA GETPOWER ------*/
+    #so-na-getpower {
+      padding: 40px 0px;
+    }
+    #so-na-getpower .titulo {
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 50px;
+    }
+    #so-na-getpower .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #so-na-getpower .card .icone img {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+    #so-na-getpower .imagem {
+      width: 50%;
+      padding: 0px 10px;
+      margin-bottom: 10px;
+    }
+    #so-na-getpower .imagem img {
+      width: 100%;
+    }
+    #so-na-getpower .container2 .imagem:nth-child(even) {
+      padding-top: 0px;
+    }
+    #so-na-getpower .bt {
+      font-size: 12px;
+    }
+  
+    /*------ PRODUTOS EXCLUSIVOS ------*/
+    #produtos-exclusivos {
+      padding: 40px 0px;
+    }
+    #produtos-exclusivos .titulo {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    #produtos-exclusivos .produtos {
+      margin-left: 0px;
+    }
+    #produtos-exclusivos .exclusivo {
+      left: 0px;
+    }
+  
+    /*------ PQ EMPRESÃRIO ------*/
+    #pq-empresario {
+      padding: 40px 0px;
+    }
+    #pq-empresario {
+      text-align: center;
+    }
+    #pq-empresario .titulo {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    #pq-empresario .verde {
+      color: var(--verde);
+      position: relative;
+      width: inherit;
+    }
+    #pq-empresario .rabisco img {
+      margin-top: 0px !important;
+    }
+    #pq-empresario img {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    /*------ VEJA NOSSOS EMPRESÃRIOS ------*/
+    #veja-nossos-empresarios {
+      padding: 40px 0px;
+    }
+    #veja-nossos-empresarios .veja-o-que {
+      margin-left: 0px;
+    }
+    #veja-nossos-empresarios .titulo {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    #veja-nossos-empresarios .nossos-empresarios {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    /*------ VANTAGENS FRANQUEADOS ------*/
+    #vantagens-franqueados {
+      padding: 40px 0px;
+    }
+    #vantagens-franqueados .para-franqueados {
+      right: 0px;
+    }
+    #vantagens-franqueados .titulo {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    #vantagens-franqueados .vantagens {
+      font-size: 30px;
+      line-height: 40px;
+      margin-left: 0px;
+    }
+    #vantagens-franqueados .cima img,
+    #vantagens-franqueados .baixo img {
+      width: 100%;
+    }
+    #vantagens-franqueados .itens .item {
+      text-align: center;
+    }
+    #vantagens-franqueados .itens .item .d-flex {
+      justify-content: center !important;
+    }
+    #vantagens-franqueados .stickers {
+      width: 100%;
+      position: absolute;
+      right: 0px;
+      bottom: -50px;
+    }
+    #vantagens-franqueados .bt {
+      margin-top: 0px !important;
+    }
+    #vantagens-franqueados .seta {
+      left: -45px;
+      bottom: -293px;
+      rotate: -19deg;
+    }
+    #vantagens-franqueados .caixabrinde {
+      margin-top: 148px !important;
+    }
+    /*------ ANÃLISE INTERNA ------*/
+    #analise-interna {
+      padding: 40px 0px;
+    }
+    #analise-interna .titulo {
+      margin-bottom: 0px;
+    }
+    #analise-interna .comosera {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 0px;
+    }
+    #analise-interna .lista {
+      text-align: center;
+    }
+    #analise-interna .analise {
+      font-size: 30px;
+      line-height: 40px;
+      right: 0px;
+    }
+    #analise-interna .lista .dados {
+      border-left: 0px solid #000;
+      width: 100%;
+    }
+    #analise-interna .lista .dados .bullet {
+      width: 0px;
+      height: 0px;
+    }
+    #analise-interna .imagem {
+      margin: auto;
+      margin-top: 20px;
+    }
+    #analise-interna .bt {
+      margin-top: 0px !important;
+    }
+  
+    #obrigado {
+      text-align: center;
+    }
+  
+    #obrigado .w-100 {
+      width: 100vw !important;
+    }
+    #obrigado .bt {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000 !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000 !important;
+  }
+  
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000 !important;
+  }
+  
+  .form-group .control-label,
+  .form-group > label {
+    font-weight: 600;
+    color: #34395e;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .custom-switch {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  .custom-switch-description {
+    font-size: 10px;
+    margin-left: 10px;
+    line-height: 14px;
+  }
+  .custom-switch-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-switch-input:checked ~ .custom-switch-indicator {
+    background: var(--verde);
+  }
+  .custom-switch-indicator {
+    display: inline-block;
+    height: 1.25rem;
+    width: 37px;
+    background: #e9ecef;
+    border-radius: 50px;
+    position: relative;
+    vertical-align: bottom;
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    transition: 0.3s border-color, 0.3s background-color;
+  }
+  .custom-switch-indicator:before {
+    content: "";
+    position: absolute;
+    height: calc(1.25rem - 4px);
+    width: calc(1.25rem - 4px);
+    top: 1px;
+    left: 1px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s left;
+  }
+  .custom-switch-input:checked ~ .custom-switch-indicator:before {
+    left: calc(1rem + 1px);
+  }
+  
+  @-webkit-keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00dd87,
+        0 0 70px #00dd87, 0 0 80px #00dd87;
+    }
+  }
+  
+  @keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00dd87,
+        0 0 70px #00dd87, 0 0 80px #00dd87;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .botao:hover {
+      box-shadow: 0;
+    }
+  }
