@@ -128,17 +128,17 @@
   
   /*-----------------------------------*/
   /*-----------------------------------*/
-  /*-------------- DESCUBRA -----------*/
+  /*-------------- PAGAMENTO -----------*/
   /*-----------------------------------*/
   /*-----------------------------------*/
-  #descubra .pos__elipse1 {
+  #pagamento .pos__elipse1 {
     position: absolute;
     top: 220px;
     left: 0;
     z-index: -1;
   }
   
-  #descubra .titulo {
+  #pagamento .titulo {
     color: #161616;
     text-align: center;
     font-size: 48px;
@@ -147,7 +147,7 @@
     margin-top: 180px;
   }
   
-  #descubra .numero {
+  #pagamento .numero {
     color: #161616;
     text-align: center;
     font-size: 48px;
@@ -155,7 +155,7 @@
     margin: 0 40px;
   }
   
-  #descubra .texto {
+  #pagamento .texto {
     color: #161616;
     text-align: left;
     font-size: 16px;
@@ -164,7 +164,7 @@
     margin-top: 40px;
   }
   
-  #descubra .itens {
+  #pagamento .itens {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -172,117 +172,15 @@
     margin-top: 80px;
   }
   
-  #descubra .item {
+  #pagamento .item {
     display: flex;
     flex-direction: row;
     width: 25%;
   }
+
   
-  #porque {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(53, 53, 53, 1) 50%,
-      rgba(53, 53, 53, 1) 100%
-    );
-    margin-top: 100px;
-  }
   
-  #porque .ordem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 40px;
-    margin-top: 100px;
-  }
   
-  #porque .texto {
-    color: var(--branco);
-    text-align: left;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 500;
-  }
-  
-  #porque .laptop_img {
-    width: 100%;
-  }
-  
-  #porque .botao {
-    margin-bottom: 0 !important;
-  }
-  
-  /*-----------------------------------*/
-  /*-----------------------------------*/
-  /*-------------- GETPOWER -----------*/
-  /*-----------------------------------*/
-  /*-----------------------------------*/
-  
-  #getpower {
-    margin-top: 230px;
-    background-image: url(../img/landing-ebook/bg.png);
-    background-repeat: no-repeat;
-  
-    background-size: cover;
-    position: relative;
-    min-height: 600px;
-  }
-  
-  #getpower .pos__elipse2 {
-    position: absolute;
-    top: -250px;
-    right: 0;
-    z-index: -1;
-  }
-  
-  #getpower .ordem {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  #getpower .imagem {
-    left: 0 !important;
-    /* position: absolute;
-      margin-top: -80px;
-      left: 0; */
-  }
-  
-  #getpower .img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: auto;
-    margin-top: -70px;
-    border-radius: 8px;
-  
-  }
-  
-  #getpower .titulo {
-    font-size: 40px;
-    font-weight: 600;
-    margin-top: 64px;
-    text-align: center;
-  }
-  
-  #getpower .traco {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 24px;
-  }
-  
-  #getpower .textos {
-    margin-left: 50px;
-    color: var(--branco);
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  #getpower .textos b {
-    color: #161616;
-  }
   
   @media screen and (max-width: 425px) {
     #envio {
@@ -383,15 +281,11 @@
       margin-top: 60px;
     }
   
-    #descubra .pos__elipse1 {
+    #pagamento .pos__elipse1 {
       display: none;
     }
   
-    #getpower .pos__elipse2 {
-      display: none;
-    }
-  
-    #descubra .titulo {
+    #pagamento .titulo {
       margin-top: 60px !important;
       font-size: 29px;
       display: flex;
@@ -400,125 +294,48 @@
       margin-right: 0;
     }
   
-    #descubra .itens {
+    #pagamento .itens {
       flex-wrap: wrap;
       margin-top: 60px !important;
     }
   
-    #descubra .item {
+    #pagamento .item {
       width: 46%;
     }
   
-    #descubra .texto2 {
+    #pagamento .texto2 {
       display: none;
     }
   
-    #descubra .porque {
+    #pagamento .porque {
       flex-wrap: wrap;
     }
   
-    #descubra .texto {
+    #pagamento .texto {
       margin: 0 0px;
       max-width: 95%;
       font-size: 15px;
     }
   
-    #descubra .laptop_img {
+    #pagamento .laptop_img {
       width: 100%;
       height: 100%;
       margin-left: 10%;
     }
   
-    #descubra .numero {
+    #pagamento .numero {
       margin: 0;
       display: flex;
       justify-content: center;
       /* margin-right: 22%; */
     }
-    #descubra .item {
+    #pagamento .item {
       margin-top: 20px !important;
     }
   
-    #descubra .porque .texto {
+    #pagamento .porque .texto {
       margin-left: 10%;
       font-size: 24px;
     }
   
-    #getpower {
-      margin-top: 140px;
-    }
-  
-    #getpower .ordem {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  
-    #getpower .img {
-      width: 100%;
-    }
-  
-    #getpower .titulo {
-      font-size: 30px;
-      font-weight: 600;
-      margin-top: 64px;
-      text-align: center;
-    }
-  
-    #getpower .textos {
-      margin-left: 0px;
-      color: var(--branco);
-      font-size: 16px;
-      font-weight: 400;
-      text-align: center;
-      margin-top: 255px;
-    }
-  
-    #getpower .texto1 {
-      margin-bottom: 35px;
-    }
-  
-    #getpower .texto1,
-    #getpower .subtitulo {
-      text-align: left;
-      width: 80%;
-      margin-left: 10%;
-    }
-  
-    #getpower .textos b {
-      color: #161616;
-    }
-  
-    #porque {
-      background: rgb(255, 255, 255);
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 50%,
-        rgba(53, 53, 53, 1) 50%,
-        rgba(53, 53, 53, 1) 100%
-      );
-      padding-top: 30px;
-      margin-top: 100px;
-    }
-  
-    #porque .texto {
-      font-weight: 500;
-      font-size: 22px;
-      margin-top: 50px;
-      text-align: center;
-    }
-  
-    #porque .caixa {
-      width: 80% !important;
-      margin-left: 10%;
-    }
-  
-    #porque .botao {
-      width: 100% !important;
-      margin-bottom: 60px;
-    }
-  
-    #porque .botao {
-      margin-bottom: 40px !important;
-    }
   }
